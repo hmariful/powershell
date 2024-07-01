@@ -1,4 +1,13 @@
-﻿$data=import-csv -Path "C:\Users\abu_r\Desktop\OutPut.csv"
+<#
+Add Backup User in Veeam backup Solution for Microsoft Office 365
+This script will add multiple users in backup profile with the help of csv file
+
+Author Details:
+Name: Md Ariful Hauqe
+Email: hmariful@outlook.com
+#>
+
+$data=import-csv -Path "C:\Users\abu_r\Desktop\OutPut.csv"
 foreach($users in $data)
     {
         $user_name=$users.uName
