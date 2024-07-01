@@ -7,7 +7,10 @@ Name: Md Ariful Hauqe
 Email: hmariful@outlook.com
 #>
 
-$data=import-csv -Path "C:\Users\abu_r\Desktop\OutPut.csv"
+#Import data from CSV file
+$data=import-csv -Path "full_path_to_csv_file"
+
+#Start the Loop
 foreach($users in $data)
     {
         $user_name=$users.uName
